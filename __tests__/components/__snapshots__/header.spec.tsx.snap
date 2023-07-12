@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should render 1`] = `
+<div>
+  <header
+    class="flex flex-col bg-neutral-600 p-4 text-center text-white gap-1"
+  >
+    <h1
+      class="text-3xl"
+    >
+      A Meeting Planner
+    </h1>
+    <h2>
+      The boring way to plan your meetings
+    </h2>
+  </header>
+</div>
+`;

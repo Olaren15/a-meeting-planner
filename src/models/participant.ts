@@ -6,12 +6,7 @@ export class Participant {
     passwordHash?: string;
     availabilities: Duration[];
 
-    constructor(
-        id: number,
-        name: string,
-        availabilities: Duration[],
-        passwordHash?: string,
-    ) {
+    constructor(id: number, name: string, availabilities: Duration[], passwordHash?: string) {
         this.id = id;
         this.name = name;
         this.availabilities = availabilities;

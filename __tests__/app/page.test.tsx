@@ -1,13 +1,13 @@
-import { describe } from "@jest/globals";
 import { render, screen } from "@testing-library/react";
 import Home from "@/app/page";
 
 describe("Home", () => {
-    it("renders 'hello world'", () => {
+    it("Should contain a link that points to the create page", () => {
         render(<Home />);
 
-        const heading = screen.getByRole("heading");
+        const createLink = screen.getByRole("link");
 
-        expect(heading).toBeInTheDocument();
+        expect(createLink).toBeInTheDocument();
+        expect(createLink).toHaveAttribute("href", "/create");
     });
 });
