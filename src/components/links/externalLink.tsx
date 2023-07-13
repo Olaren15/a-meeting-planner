@@ -20,7 +20,7 @@ export default function ExternalLink(props: ExternalLinkProps) {
                 props.className,
             )}
         >
-            {props.children} <FaUpRightFromSquare />
+            {props.children} <FaUpRightFromSquare role={"img"} aria-label={"opens in a new tab"} focusable={false} />
         </Link>
     );
 }

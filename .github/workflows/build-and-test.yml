@@ -41,4 +41,14 @@ jobs:
       - name: Build
         run: npm run build
       - name: Run unit tests
-        run: npm run test:ci
+        run: npm run test:unit:ci
+      - name: Setup Playwright
+        run: npx playwright install --with-deps
+      - name: Run end to end tests
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30

@@ -7,10 +7,14 @@
     "dev": "next dev",
     "lint": "next lint",
     "prepare": "husky install",
-    "start": "next start",
-    "test": "jest",
-    "test:update": "jest --updateSnapshot",
-    "test:ci": "jest --ci"
+    "prestart": "npm run build",
+    "start": "npx serve@latest out",
+    "test": "npm run test:unit && npm run test:e2e:docker",
+    "test:e2e": "playwright test",
+    "test:e2e:docker": "docker run -it --rm --ipc=host --workdir=/my_tests -v $PWD:/my_tests mcr.microsoft.com/playwright:v1.36.0-jammy npm run test:e2e",
+    "test:unit": "jest",
+    "test:unit:ci": "jest --ci",
+    "test:unit:update": "jest --updateSnapshot"
   },
   "dependencies": {
     "@js-temporal/polyfill": "^0.4.4",
@@ -24,6 +28,8 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.7.3",
+    "@playwright/test": "^1.36.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^20.4.0",

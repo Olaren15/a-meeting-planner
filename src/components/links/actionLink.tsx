@@ -18,7 +18,8 @@ export default function ActionLink(props: PrimaryButtonProps) {
             )}
             href={props.href}
         >
-            {props.children} <FaCircleRight />
+            {props.children}
+            <FaCircleRight focusable={false} />
         </Link>
     );
 }

@@ -32,4 +32,12 @@ describe("ExternalLInk", () => {
 
         expect(link).toHaveTextContent(text);
     });
+
+    it("Should tell screen readers that the links opens in a new tab", () => {
+        render(<ExternalLink href={href} />);
+
+        const newTabIcon = screen.getByRole("img");
+
+        expect(newTabIcon).toHaveAccessibleName("opens in a new tab");
+    });
 });
