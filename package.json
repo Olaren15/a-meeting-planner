@@ -9,6 +9,7 @@
     "prepare": "husky install",
     "start": "next start",
     "test": "jest",
+    "test:update": "jest --updateSnapshot",
     "test:ci": "jest --ci"
   },
   "dependencies": {

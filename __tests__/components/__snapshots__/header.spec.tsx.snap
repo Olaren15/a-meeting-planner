@@ -3,7 +3,7 @@
 exports[`Header Should render 1`] = `
 <div>
   <header
-    class="flex flex-col bg-neutral-600 p-4 text-center text-white gap-1"
+    class="flex flex-col gap-1 bg-neutral-600 p-4 text-center text-white"
   >
     <h1
       class="text-3xl"
