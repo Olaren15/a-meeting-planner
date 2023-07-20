@@ -1,5 +1,6 @@
-import { render, screen } from "@testing-library/react";
 import ExternalLink from "@/components/links/externalLink";
+
+import { render, screen } from "@testing-library/react";
 
 describe("ExternalLInk", () => {
     const href = "https://link.com";

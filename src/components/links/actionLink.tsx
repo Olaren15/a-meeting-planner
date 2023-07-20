@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { FaCircleRight } from "react-icons/fa6";
+
 import React from "react";
+
 import classNames from "classnames";
+import { FaCircleRight } from "react-icons/fa6";
 
 export interface PrimaryButtonProps {
     href: string;

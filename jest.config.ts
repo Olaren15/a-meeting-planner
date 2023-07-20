@@ -1,4 +1,5 @@
 import nextJest from "next/jest.js";
+
 import { Config } from "jest";
 
 const createJestConfig = nextJest({

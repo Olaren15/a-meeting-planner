@@ -1,5 +1,6 @@
-import { render, screen } from "@testing-library/react";
 import ActionLink from "@/components/links/actionLink";
+
+import { render, screen } from "@testing-library/react";
 
 describe("ActionLink", () => {
     const href = "https://link.com";

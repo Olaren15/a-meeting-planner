@@ -1,7 +1,9 @@
 import Link from "next/link";
+
 import React from "react";
-import { FaUpRightFromSquare } from "react-icons/fa6";
+
 import classNames from "classnames";
+import { FaUpRightFromSquare } from "react-icons/fa6";
 
 export interface ExternalLinkProps {
     href: string;

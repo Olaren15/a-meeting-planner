@@ -1,7 +1,7 @@
 import { Duration } from "@/models/duration";
 import { Participant } from "@/models/participant";
-import { TimeWindow } from "@/models/timeWindow";
 import { SerializedEvent } from "@/models/serializedEvent";
+import { TimeWindow } from "@/models/timeWindow";
 
 export class Event {
     public timeSpan: Duration;
