@@ -1,4 +1,4 @@
 .next/
-.out/
+out/
 playwright-report/
 .idea/

@@ -61,7 +61,7 @@ export default defineConfig({
     // Run your local dev server before starting the tests */
     webServer: {
         // We don't have to rebuild in the CI environment
-        command: process.env.CI ? "serve out" : "npm run build && serve out",
+        command: process.env.CI ? "npm run start" : "npm run build && npm run start",
         url: "http://127.0.0.1:3000",
         reuseExistingServer: !process.env.CI,
     },
