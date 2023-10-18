@@ -4,4 +4,4 @@ A boring way to plan your meetings
 
 ## Licence
 
-GNU AGPLv3
+GNU GPLv3
